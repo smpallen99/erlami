@@ -304,6 +304,9 @@ validate_salutation("Asterisk Call Manager/1.0\r\n") ->
 validate_salutation("Asterisk Call Manager/1.2\r\n") ->
     ok;
 
+validate_salutation("Asterisk Call Manager/1.3\r\n") ->
+    ok;
+
 validate_salutation(Invalid) ->
     error_logger:error_msg("Invalid Salutation: ~p", [Invalid]),
     unknown_salutation.

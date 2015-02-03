@@ -31,7 +31,7 @@ dial(ServerName, Channel, {Context, Extension, Priority}, Variables) ->
     Action = erlami_message:new_action(
         "Originate",
         [
-            {"Channel", Channel}, {"Extension", Extension},
+            {"Channel", Channel}, {"Exten", Extension},
             {"Context", Context}, {"Priority", Priority}
         ],
         Variables
